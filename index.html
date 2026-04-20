@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Ultimate Glow Up Guide — Transform your mind, body, beauty, money and life. 10 chapters + 30-Day Plan. $17 instant download.">
+<meta property="og:title" content="The Ultimate Glow Up Guide ✨">
+<meta property="og:description" content="Transform your mind, body, beauty, style, money and life. 10 chapters + 30-Day Glow Up Plan. $17 instant download.">
+<meta property="og:image" content="https://boyw4433-afk.github.io/glow-up-guide/cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<title>The Ultimate Glow Up Guide ✨ — Transform Every Area of Your Life</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --pink: #ec4899;
+    --pink-light: #f472b6;
+    --purple: #a78bfa;
+    --gold: #fbbf24;
+    --dark: #0d0d0d;
+    --dark2: #1a0a2e;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--dark);
+    color: white;
+    line-height: 1.6;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a0a2e 0%, #2d0a3e 40%, #1a0530 100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(236,72,153,0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(236,72,153,0.07) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .glow-orb {
+    position: absolute; border-radius: 50%;
+    filter: blur(60px); pointer-events: none;
+  }
+  .glow-orb.pink { width: 600px; height: 600px; background: rgba(236,72,153,0.25); top: -200px; left: -100px; }
+  .glow-orb.purple { width: 500px; height: 500px; background: rgba(167,139,250,0.2); bottom: -150px; right: -100px; }
+  .glow-orb.gold { width: 300px; height: 300px; background: rgba(251,191,36,0.15); top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+  .hero-content { position: relative; z-index: 10; max-width: 800px; }
+
+  .top-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(251,191,36,0.15); border: 1px solid rgba(251,191,36,0.4);
+    color: var(--gold); font-size: 13px; font-weight: 700; letter-spacing: 2px;
+    padding: 8px 20px; border-radius: 30px; margin-bottom: 32px;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-size: clamp(48px, 8vw, 80px);
+    font-weight: 900; line-height: 1.0; margin-bottom: 24px;
+  }
+  .hero h1 .the { display: block; font-size: 0.45em; color: #94a3b8; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 8px; }
+  .hero h1 .glow { display: block; color: white; }
+  .hero h1 .up {
+    display: block;
+    background: linear-gradient(90deg, #f472b6, #a78bfa, #fbbf24);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+
+  .hero-sub { font-size: 20px; color: #94a3b8; margin-bottom: 40px; max-width: 560px; margin-left: auto; margin-right: auto; }
+
+  .hero-stats {
+    display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px;
+  }
+  .hero-stat {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 12px; padding: 16px 24px; text-align: center;
+    min-width: 100px;
+  }
+  .hero-stat .num { font-size: 30px; font-weight: 900; color: var(--pink-light); }
+  .hero-stat .lbl { font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+
+  .cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #be185d, #7c1d6e);
+    color: white; text-decoration: none;
+    font-size: 22px; font-weight: 900;
+    padding: 20px 56px; border-radius: 60px;
+    box-shadow: 0 20px 60px rgba(236,72,153,0.4);
+    border: 1px solid rgba(244,114,182,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    letter-spacing: 0.5px;
+  }
+  .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 28px 70px rgba(236,72,153,0.55); }
+  .cta-btn span { color: var(--gold); }
+
+  .guarantee { margin-top: 20px; font-size: 14px; color: #475569; }
+
+  /* CHAPTERS */
+  .chapters { padding: 100px 20px; background: #0a0a12; }
+  .section-label {
+    text-align: center; font-size: 13px; font-weight: 700;
+    color: var(--pink); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 16px;
+  }
+  .section-title { text-align: center; font-size: clamp(32px, 5vw, 52px); font-weight: 900; margin-bottom: 16px; }
+  .section-sub { text-align: center; color: #64748b; font-size: 18px; margin-bottom: 64px; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+  .chapters-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px; max-width: 1000px; margin: 0 auto;
+  }
+
+  .chapter-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px; padding: 28px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .chapter-card:hover { border-color: rgba(244,114,182,0.3); transform: translateY(-4px); }
+
+  .chapter-icon { font-size: 36px; margin-bottom: 14px; }
+  .chapter-num { font-size: 11px; color: var(--pink); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
+  .chapter-title { font-size: 18px; font-weight: 800; margin-bottom: 10px; }
+  .chapter-desc { font-size: 14px; color: #64748b; line-height: 1.6; }
+
+  /* WHAT YOU GET */
+  .get-section {
+    padding: 100px 20px;
+    background: linear-gradient(180deg, #0d0d1a 0%, #1a0a2e 100%);
+  }
+  .get-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px; max-width: 900px; margin: 0 auto;
+  }
+  .get-item {
+    display: flex; gap: 16px; align-items: flex-start;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px; padding: 22px;
+  }
+  .get-check { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+  .get-text { font-size: 15px; font-weight: 600; color: #e2e8f0; }
+
+  /* TESTIMONIALS */
+  .testimonials { padding: 100px 20px; background: #0a0a12; }
+  .testi-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px; max-width: 900px; margin: 0 auto;
+  }
+  .testi-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px; padding: 28px;
+  }
+  .stars { color: var(--gold); font-size: 18px; margin-bottom: 14px; }
+  .testi-text { font-size: 15px; color: #94a3b8; line-height: 1.7; margin-bottom: 18px; font-style: italic; }
+  .testi-name { font-size: 14px; font-weight: 700; color: var(--pink-light); }
+
+  /* FINAL CTA */
+  .final-cta {
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #1a0a2e 0%, #2d0a3e 50%, #1a0530 100%);
+    text-align: center; position: relative; overflow: hidden;
+  }
+  .final-cta::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(236,72,153,0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(236,72,153,0.07) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+  .final-cta-inner { position: relative; z-index: 10; max-width: 640px; margin: 0 auto; }
+  .final-emoji { font-size: 80px; margin-bottom: 24px; }
+  .final-cta h2 { font-size: clamp(36px, 6vw, 60px); font-weight: 900; margin-bottom: 20px; }
+  .final-cta h2 span {
+    background: linear-gradient(90deg, #f472b6, #a78bfa);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .final-cta p { font-size: 18px; color: #94a3b8; margin-bottom: 48px; }
+
+  .price-block { margin-bottom: 40px; }
+  .price-was { font-size: 18px; color: #475569; text-decoration: line-through; margin-bottom: 8px; }
+  .price-now { font-size: 72px; font-weight: 900; color: var(--pink-light); line-height: 1; }
+  .price-note { font-size: 16px; color: #64748b; margin-top: 8px; }
+
+  footer {
+    background: #050508; padding: 40px 20px; text-align: center;
+    font-size: 13px; color: #334155;
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="glow-orb pink"></div>
+  <div class="glow-orb purple"></div>
+  <div class="glow-orb gold"></div>
+
+  <div class="hero-content">
+    <div class="top-badge">✨ For Women Who Are Ready</div>
+    <h1>
+      <span class="the">The Ultimate</span>
+      <span class="glow">Glow Up</span>
+      <span class="up">Guide</span>
+    </h1>
+    <p class="hero-sub">Transform your mind, body, beauty, style, money, and life — from the inside out. Starting today.</p>
+
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">10</div><div class="lbl">Chapters</div></div>
+      <div class="hero-stat"><div class="num">30</div><div class="lbl">Day Plan</div></div>
+      <div class="hero-stat"><div class="num">PDF</div><div class="lbl">Instant Download</div></div>
+      <div class="hero-stat"><div class="num">$17</div><div class="lbl">One Time</div></div>
+    </div>
+
+    <a href="https://3992582901331.gumroad.com/l/fddjk" class="cta-btn">
+      Get The Guide — <span>$17</span>
+    </a>
+    <p class="guarantee">✅ Instant PDF download · Yours forever · No subscription</p>
+  </div>
+</section>
+
+<!-- CHAPTERS -->
+<section class="chapters">
+  <p class="section-label">What's Inside</p>
+  <h2 class="section-title">10 Chapters That Cover <em style="color:#f472b6">Everything</em></h2>
+  <p class="section-sub">This isn't just a beauty guide. It's a complete life upgrade.</p>
+
+  <div class="chapters-grid">
+    <div class="chapter-card">
+      <div class="chapter-icon">✨</div>
+      <div class="chapter-num">Chapter 1</div>
+      <div class="chapter-title">Mindset & Confidence</div>
+      <div class="chapter-desc">Stop self-sabotaging. Build unshakeable confidence and a success mindset that carries you through anything.</div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-icon">💆</div>
+      <div class="chapter-num">Chapter 2</div>
+      <div class="chapter-title">Skincare & Beauty</div>
+      <div class="chapter-desc">A real skincare routine that works. Morning + evening rituals, ingredients that actually do something.</div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-icon">💪</div>
+      <div class="chapter-num">Chapter 3</div>
+      <div class="chapter-title">Fitness & Body</div>
+      <div class="chapter-desc">A 4-week beginner workout plan. Move in ways you enjoy and feel good in your body starting today.</div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-icon">🥗</div>
+      <div class="chapter-num">Chapter 4</div>
+      <div class="chapter-title">Nutrition & Eating to Glow</div>
+      <div class="chapter-desc">What foods create a glow, what foods cause breakouts, and how to stop the restrict-binge cycle.</div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-icon">👗</div>
+      <div class="chapter-num">Chapter 5</div>
+      <div class="chapter-title">Style & Wardrobe</div>
+      <div class="chapter-desc">Find your personal style. Build a capsule wardrobe that makes you look put-together every day.</div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-icon">💰</div>
+      <div class="chapter-num">Chapter 6</div>
+      <div class="chapter-title">Money & Financial Glow Up</div>
+      <div class="chapter-desc">Build an emergency fund, get out of debt, start investing. Your finances are part of your glow up.</div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-icon">💔</div>
+      <div class="chapter-num">Chapter 7</div>
+      <div class="chapter-title">Relationships & Boundaries</div>
+      <div class="chapter-desc">Drop the people who drain you. Set boundaries that protect your peace.</div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-icon">🛁</div>
+      <div class="chapter-num">Chapter 8</div>
+      <div class="chapter-title">Self-Care & Daily Rituals</div>
+      <div class="chapter-desc">Morning and evening routines that set the tone for your whole life. Real self-care.</div>
+    </div>
+    <div class="chapter-card">
+      <div class="chapter-icon">🚀</div>
+      <div class="chapter-num">Chapter 9</div>
+      <div class="chapter-title">Career & Ambition</div>
+      <div class="chapter-desc">Stop settling. Negotiate your worth. Build toward work you actually love.</div>
+    </div>
+    <div class="chapter-card" style="border-color: rgba(244,114,182,0.3); background: rgba(244,114,182,0.06);">
+      <div class="chapter-icon">📅</div>
+      <div class="chapter-num">BONUS</div>
+      <div class="chapter-title">Your 30-Day Glow Up Plan</div>
+      <div class="chapter-desc">A complete day-by-day action plan — one small change per day that compounds into a massive transformation.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section class="get-section">
+  <p class="section-label">Everything Included</p>
+  <h2 class="section-title" style="margin-bottom:48px">What You Get for <span style="color:#f472b6">$17</span></h2>
+
+  <div class="get-grid">
+    <div class="get-item"><div class="get-check">💅</div><div class="get-text">Complete 10-chapter transformation guide</div></div>
+    <div class="get-item"><div class="get-check">📅</div><div class="get-text">Full 30-Day Glow Up Action Plan</div></div>
+    <div class="get-item"><div class="get-check">🧴</div><div class="get-text">Skincare routine + ingredient guide</div></div>
+    <div class="get-item"><div class="get-check">💪</div><div class="get-text">4-week beginner fitness plan</div></div>
+    <div class="get-item"><div class="get-check">💰</div><div class="get-text">Financial glow up roadmap</div></div>
+    <div class="get-item"><div class="get-check">📝</div><div class="get-text">Self-reflection journal prompts</div></div>
+    <div class="get-item"><div class="get-check">✅</div><div class="get-text">Printable habit tracker</div></div>
+    <div class="get-item"><div class="get-check">💜</div><div class="get-text">Affirmations for every chapter</div></div>
+    <div class="get-item"><div class="get-check">📱</div><div class="get-text">Works on phone, tablet, or computer</div></div>
+    <div class="get-item"><div class="get-check">⬇️</div><div class="get-text">Instant PDF download — no waiting</div></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <p class="section-label">Women Are Loving It</p>
+  <h2 class="section-title" style="margin-bottom:48px">Real Results, Real Women</h2>
+
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"I've tried so many self-help books and none of them cover everything the way this does. The 30-day plan alone was worth every penny. I feel like a completely different person."</p>
+      <div class="testi-name">— Jasmine T.</div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"The money chapter hit different. I finally have an emergency fund and I'm paying off debt. I didn't expect a glow up guide to change my finances but here we are."</p>
+      <div class="testi-name">— Keisha M.</div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"My skin has never looked better. The skincare routine in chapter 2 is so simple but it actually works. Bought this for beauty tips and got a whole life upgrade."</p>
+      <div class="testi-name">— Priya R.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="final-cta-inner">
+    <div class="final-emoji">💅</div>
+    <h2>Your Glow Up Era <span>Starts Now</span></h2>
+    <p>Stop waiting for the "right time." The right time is today. Everything you need is inside this guide.</p>
+
+    <div class="price-block">
+      <div class="price-was">Value: $97+</div>
+      <div class="price-now">$17</div>
+      <div class="price-note">One-time payment · Instant PDF download · Yours forever</div>
+    </div>
+
+    <a href="https://3992582901331.gumroad.com/l/fddjk" class="cta-btn">
+      Yes — I'm Ready to Glow Up ✨
+    </a>
+    <p style="margin-top:20px; font-size:14px; color:#475569;">✅ Secure checkout via Gumroad &nbsp;·&nbsp; ✅ Instant download &nbsp;·&nbsp; ✅ Works on any device</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 The Ultimate Glow Up Guide · <a href="https://3992582901331.gumroad.com/l/fddjk" style="color:#f472b6">Get The Guide</a></p>
+</footer>
+
+</body>
+</html>
